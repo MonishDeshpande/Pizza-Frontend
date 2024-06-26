@@ -1,5 +1,6 @@
 import IconArrowRight from "../Components/Icons/ArrowRight";
 import PizzaImage from "../assets/Images/pizza2.png";
+import CookingImage from "../assets/Images/cooking1.png";
 function Home() {
   return (
     <div>
@@ -25,6 +26,30 @@ function Home() {
         </div>
         <div>
           <img src={PizzaImage} alt="pizza" width={550} height={550} />
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-4 mt-6 bg-gradient-to-r from-amber-50 to-orange-300">
+        <div className="conainer flex flex-col md:flex-row">
+          <div className="flex flex-col items-center justify-center rounded-lg lg:w-1/2">
+            <img
+              src={CookingImage}
+              width={500}
+              className="rounded-lg"
+              alt="Cooking"
+            />
+          </div>
+          <div className="flex flex-col flex-wrap text-center lg:py-6 lg:w-1/2 lg:pl-12 lg:text-left ">
+            <div>
+              <h2 className="mb-2 text-5xl font-extrabold text-transparent title-font bg-gradient-to-r from-orange-600 to-orange-300 bg-clip-text">
+                Cooked by the best <br /> chefs in the world
+              </h2>
+              <p className="text-base leading-relaxed text-[#6B7280]">
+                There are many benefits regarding to that but the main ones are:
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
